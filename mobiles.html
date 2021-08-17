@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopy | Mobiles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header-1">
+        <!-- number -->
+        <div class="num">
+            <h3>+91 7558131495</h3>
+        </div>
+        <!-- nav-1 -->
+        <div class="nav-1">
+            <ul>
+               <li><a href="#">Sigen</a></li>
+               <li><a href="#">Login</a></li>
+               <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- header-2 -->
+    <div class="header-2">
+        <!-- logo -->
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <!-- nav-2 -->
+        <div class="nav-2">
+            <ul>
+                <li><a href="Shopy.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Catogery</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#laptop">LAPTOP</a>
+                          <a href="#computer">COMPUTER</a>
+                          <a href="#mobile">MOBILE</a>
+                          <a href="#tv">TV</a>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- catogery -->
+    <div class="brand">
+        <ul>
+            <li><a href="#"><img src="SAM.png"></a></li>
+            <li><a href="#"><img src="redmi.png"></a></li>
+            <li><a href="#"><img src="oppo.png"></a></li>
+            <li><a href="#"><img src="oneplus.png"></a></li>
+            <li><a href="#"><img src="vivo.jpg"></a></li>
+        </ul>
+    </div>
+    <footer class="footer-distributed">
+        
+        <div class="footer-left">
+        
+       <img style="width: 20%;border-radius: 50%;" src="logo.png">
+        
+        <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">Catogery</a>
+        ·
+        <a href="#">Contact</a>
+        </p>
+        
+        <p class="footer-company-name">Partysqure&copy; 2021</p>
+        </div>
+        
+        <div class="footer-center">
+        
+        <div>
+        <i class="fa fa-map-marker"></i>
+        <p><a href="https://goo.gl/maps/QYHVr9zyjA5v2SHH8">Locate Me</a></p>
+        </div>
+        
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 7558131495</p>
+        </div>
+        
+        <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">bluebery408@gmail.com</a></p>
+        </div>
+        
+        </div>
+        
+        <div class="footer-right">
+        
+        <p class="footer-company-about">
+        <span>About We</span>
+        Party squre is online shoping website to purches electronics Product.
+        </p>
+        
+        <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        
+        </div>
+        
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
